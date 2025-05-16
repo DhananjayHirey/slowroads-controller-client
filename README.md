@@ -1,50 +1,38 @@
-# Welcome to your Expo app 👋
+# 🕹️ SlowRoads.io Mobile Controller
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native controller app (built with Expo) that turns your phone into a **steering wheel** for the browser game [slowroads.io](https://slowroads.io), using **tilt-based controls**. Communicates with a local PC server via **Socket.IO** over Wi-Fi.
 
-## Get started
+## 📱 Features
 
-1. Install dependencies
+- 📡 Real-time control using **Socket.IO**
+- 🧭 **Tilt-based steering** (accelerometer/gyroscope)
+- 🎮 Designed for playing [slowroads.io](https://slowroads.io) in Chrome
+- ⚙️ Backend server using **Node.js + Express + Socket.IO**
+- 🔧 Easily customizable for other browser games
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🏗️ Tech Stack
 
-   ```bash
-    npx expo start
-   ```
+### Client (Mobile)
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [Socket.IO-client](https://socket.io/docs/v4/client-api/)
+- [expo-sensors](https://docs.expo.dev/versions/latest/sdk/sensors/) (for gyroscope / accelerometer)
 
-In the output, you'll find options to open the app in a
+### Server (Desktop)
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Socket.IO](https://socket.io/)
+- [robotjs](https://github.com/octalmage/robotjs) (for simulating keyboard input)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Getting Started
 
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the Repo
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/yourusername/slowroads-controller.git
+cd slowroads-controller
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
